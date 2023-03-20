@@ -1,59 +1,45 @@
-## Introduction
+In the 'Project' window navigate to the 'Scripts' folder. 
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+Create a new Script called `Spin`.
 
-### What you will make
+Open the new Script and enter the following code:
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: cs
+filename: Spin.cs
+line_numbers: true
+line_number_start: 1
+line_highlights:
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
---- /collapse ---
+public class Spin : MonoBehaviour
+{
+    public Vector3 rotation;
 
---- collapse ---
----
-title: Additional information for educators
----
+    // Start is called before the first frame update
+    void Start()
+    {
+       
+    }
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Rotate(rotation * Time.deltaTime); 
+    }
+}
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+--- /code ---
 
---- /collapse ---
+**Save** the script and return to Unity. 
+
+**Add** the `Spin` script to any GameObject that you would like to spin. 
+
+**Choose** the direction the spin.
+
++ Change the `X`, `Y` and `Z` values in `Spin` script variables in the Inspector window to make your GameObject spin in the direction that you have chosen. 
