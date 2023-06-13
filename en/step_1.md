@@ -1,4 +1,4 @@
-In the 'Project' window navigate to the 'Scripts' folder. 
+In the Project window, navigate to the Scripts folder. 
 
 Create a new Script called `Spin`.
 
@@ -36,10 +36,10 @@ public class Spin : MonoBehaviour
 
 --- /code ---
 
-**Save** the script and return to Unity. 
+Save the script and return to Unity. 
 
-**Add** the `Spin` script to any GameObject that you would like to spin. 
+Add the `Spin` script to any GameObject that you would like to spin. 
 
-**Choose** the direction the spin.
+**Choose** the direction of the spin.
 
 + Change the `X`, `Y` and `Z` values in `Spin` script variables in the Inspector window to make your GameObject spin in the direction that you have chosen. 
